@@ -1,0 +1,119 @@
+---
+layout: default
+---
+
+<div class='container'>
+    <header class="masthead text-center">
+
+      <img class='img-responsive center-block' src="/images/people/melo_banner.jpeg" width="70%" height="30%" />
+
+       <p align="justify">
+      What are the representational primitives underlying the language system?
+       What are the essential mechanism of language processing? 
+       How do these components interact with cognitive resources like memory? 
+       In the <i>MathEmatics of Language and cOgnition Lab</i> at the University of Utah, we approach these questions by drawing insights from linguistic theor(ies), theoretical computer science
+    (formal languages, computational complexity theory, and parsing theory), and a vast array of experimental methods.
+  </p>
+
+   <p>
+        <span style="display: block; margin-bottom: 3em"></span>
+
+      <a href="https://github.com/aniellodesanto/MeLo"><i class="fa fa-github"></i></a>&nbsp;&nbsp;&nbsp;
+      <a href="https://scholar.google.com/citations?authuser=2&user=bzk5U9IAAAAJ"><i class="fa fa-google"></i></a>&nbsp;&nbsp;&nbsp;
+      <a href="mailto:aniello.desanto@utah.edu"><i class="fa fa-envelope-o"></i></a>
+      </p>
+    <hr>
+   <p>
+  {% assign people_sorted = site.people | sort: 'joined' %}
+{% assign role_array = "pi|postdoc|student|researchstaff|visiting|others|alumni" | split: "|" %}
+
+{% for role in role_array %}
+
+{% assign people_in_role = people_sorted | where: 'position', role %}
+
+<!-- Skip section if there's nobody -->
+{% if people_in_role.size == 0 %}
+  {% continue %}
+{% endif %}
+
+<div class="pos_header">
+{% if role == 'postdoc' %}
+<h3>Postdoctoral Fellows</h3>
+ {% elsif role == 'pi' %}
+<h3>Principal Investigator</h3>
+ {% elsif role == 'student' %}
+<h3> Affiliated Students</h3>
+ {% elsif role == 'researchstaff' %}
+<h3>Research Staff</h3>
+ {% elsif role == 'visiting' %}
+<h3>Visiting Scholars</h3>
+ {% elsif role == 'others' %}
+<h3>Honorary Members</h3>
+ {% elsif role == 'alumni' %}
+<h3>Alumni</h3>
+{% endif %}
+</div>
+
+{% if role != 'alumni' %}
+<div class="content list people">
+  {% for profile in people_sorted %}
+    {% if profile.position contains role %}
+      <div class="list-item-people">
+        <p class="list-post-title">
+          {% if profile.avatar %}
+            <a href="{{ site.baseurl }}{{ profile.web }}"><img class="profile-thumbnail" src="{{site.baseurl}}/images/people/{{profile.avatar}}"></a>
+          {% else %}
+            <a href="{{ site.baseurl }}{{ profile.url }}"><img class="profile-thumbnail" src="{{site.baseurl}}/images/people/peridot.jpeg"></a>
+          {% endif %}
+          <a class="name" href="{{ site.baseurl }}{{ profile.web }}">{{ profile.name }}</a><br>
+           {{ profile.role }}<br>
+             {{ profile.dept }}<br>
+           {{ profile.pronouns }}
+        </p>
+      </div>    
+    {% endif %}
+  {% endfor %}
+</div>
+<hr>
+{% endif %}
+{% endfor %}
+  
+  </p> 
+  
+
+      <div class="w3-container" style="   background: #f0f8ff; padding: 25px; border-radius:10px; border: 1px solid #5d8aa8">
+        <div style="text-align:left">
+          <h3> Recent News </h3>
+          <u>Happenings of the last few months</u>
+          <span style="display: block; margin-bottom: 1em"></span>
+          <div class="news">
+              {% capture now %}{{'now' | date: '%s' | minus: 7776000 %}}{% endcapture %}
+              <ul style="list-style-position:outside;padding:20px" >
+                {% for new in site.data.news %}
+                  {% capture date %}{{new.date | date: '%s' | plus: 0 %}}{% endcapture %}
+                  {% if date > now %}
+                    <li>
+                      <span>
+                        {{ new.details }}
+                      </span>
+                    </li>
+                  {% endif %}
+                {% endfor %}
+              </ul>
+          </div>
+        </div >
+      </div>
+
+
+
+   <span style="display: block; margin-bottom: 3em"></span>
+
+    
+    <footer class="footer-main">
+     {{ site.name }} © {{ site.time | date: '%Y' }}<br>
+     <a class="link" href="https://linguistics.utah.edu/">Department of Linguistics</a>, University of Utah<br>
+       Powered by <a class="link" href="https://github.com/jekyll/jekyll">Jekyll</a>
+     </header>
+</footer>
+
+</div>

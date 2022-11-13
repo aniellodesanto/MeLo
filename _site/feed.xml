@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:dc="http://purl.org/dc/elements/1.1/">
+	<channel>
+		<title>MeLo Lab</title>
+		<link>https://aniellodesanto.github.io//MeLo</link>
+		<atom:link href="https://aniellodesanto.github.io//MeLo/feed.xml" rel="self" type="application/rss+xml" />
+		
+			<item>
+				<title>Example Post</title>
+        <description>&lt;p&gt;Just write in markdown here&lt;/p&gt;
+</description>
+				<pubDate>Mon, 01 Jun 2015 00:00:00 -0600</pubDate>
+				<link>https://aniellodesanto.github.io//MeLo/2015/06/01/dream-dataset.html</link>
+				<guid isPermaLink="true">https://aniellodesanto.github.io//MeLo/2015/06/01/dream-dataset.html</guid>
+			</item>
+		
+	</channel>
+</rss>
