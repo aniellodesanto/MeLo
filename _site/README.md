@@ -1,6 +1,6 @@
 # MeLo lab page
 
-This is repository for the Mathematics of Language and cOgnition [MeLo lab page](http://kordinglab.com/) at the University of Utah. The sourcecode is a modified version of the [Kording lab page](http://kordinglab.com/) repo, which is itself adapted from [Bedford lab page](https://bedford.io/). Many thanks to both for making their code available. The page is run via Jekyll.
+This is repository for the Mathematics of Language and cOgnition at the University of Utah. The sourcecode is a modified version of the [Kording lab page](http://kordinglab.com/) repo, which is itself adapted from [Bedford lab page](https://bedford.io/). Many thanks to both for making their code available. The page is run via Jekyll.
 
 ## Run the page locally using Jekyll
 

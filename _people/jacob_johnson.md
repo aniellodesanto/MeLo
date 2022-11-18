@@ -5,6 +5,6 @@ role: UG Student
 dept: Linguistics/Computer Science
 position: student
 avatar: jacob_j.jpeg
-web: nnnNNnnn.info
+web: https://nnnNNnnn.info
 ---
 
