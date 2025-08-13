@@ -4,7 +4,7 @@ pronouns: she/her
 role: UG Student
 dept: Linguistics
 position: student
-avatar: randa_viets.jpeg
+avatar: randa_viets.jpg
 web: 
 ---
 
