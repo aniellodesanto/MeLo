@@ -1,5 +1,5 @@
 ---
-name: He/him and fae/faer pronouns 
+name: Alexander (Lex) Putnam
 pronouns: he/him; fae/faer
 role: MA Student
 dept: History
