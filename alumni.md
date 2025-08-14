@@ -6,7 +6,6 @@ permalink: /alumni/
 
 | Who are they | Role while here | Where they went |
 | :------------- |:-------------| :-----------|
-
 | [Britta Bolander](https://philosophy.sas.upenn.edu/people/brett-bolander) | UG Student (Linguistics/Phil. of Science), UROP| Ph.D. student in Philosophy at the University of Pennsylvania | 
 | [Jillian Chang]() | Visiting High School Student| | 
 | [Daniel Del Valle](https://www.slcc.edu/english/faculty.aspx) | Graduate Student (Linguistics)| Adjunct Instructor, SLCC | 
